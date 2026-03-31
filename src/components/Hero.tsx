@@ -31,7 +31,7 @@ export default function Hero() {
         muted
         loop
         playsInline
-        poster="/assets/renders/ig-01.jpg"
+        poster="/assets/renders/ig-01.jpg.png"
       >
         <source src="/assets/video/hero-reel.mp4" type="video/mp4" />
       </video>

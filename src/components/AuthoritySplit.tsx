@@ -75,7 +75,7 @@ export default function AuthoritySplit() {
         title="Luxury Custom Homes"
         subtitle="Bespoke Residences"
         description="Architectural sanctuaries crafted for subtropical living. Salt-resistant materials, passive cooling, and bespoke craftsmanship converge — every residence an enduring statement of visual serenity and coastal luxury."
-        image="/assets/renders/ig-03.jpg"
+        image="/assets/renders/ig-03.jpg.png"
       />
 
       {/* Divider */}
@@ -87,7 +87,7 @@ export default function AuthoritySplit() {
         title="Architectural Knockdown Rebuilds"
         subtitle="Reimagined Living"
         description="Reimagine your site as an architectural sanctuary. Our custom KDRB process integrates wellness suites, subtropical sustainable design, and coastal-resilient construction — transforming your block into an enduring legacy."
-        image="/assets/renders/ig-04.jpg"
+        image="/assets/renders/ig-04.jpg.png"
         reverse
       />
     </section>

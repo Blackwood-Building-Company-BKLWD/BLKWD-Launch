@@ -3,10 +3,10 @@
 import { useEffect, useRef } from "react";
 
 const galleryImages = [
-  { src: "/assets/renders/ig-01.jpg", alt: "Curved coastal sanctuary with infinity pool" },
-  { src: "/assets/renders/ig-02.jpg", alt: "Contemporary subtropical residence with vertical screening" },
-  { src: "/assets/renders/ig-03.jpg", alt: "Architectural compound with horizontal lines" },
-  { src: "/assets/renders/ig-04.jpg", alt: "Modern facade with mixed materials" },
+  { src: "/assets/renders/ig-01.jpg.png", alt: "Curved coastal sanctuary with infinity pool" },
+  { src: "/assets/renders/ig-02.jpg.png", alt: "Contemporary subtropical residence with vertical screening" },
+  { src: "/assets/renders/ig-03.jpg.png", alt: "Architectural compound with horizontal lines" },
+  { src: "/assets/renders/ig-04.jpg.png", alt: "Modern facade with mixed materials" },
 ];
 
 export default function Signature() {

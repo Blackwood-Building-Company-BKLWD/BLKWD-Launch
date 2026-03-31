@@ -18,17 +18,17 @@ interface Post {
 
 const posts: Post[] = [
   // Row 1
-  { src: "/assets/renders/ig-01.jpg", alt: "Curved coastal sanctuary with infinity pool at sunset", type: "photo" },
-  { src: "/assets/renders/ig-02.jpg", alt: "KDRB Precision facade — concrete and dark timber battens", type: "carousel" },
-  { src: "/assets/renders/ig-03.jpg", alt: "Wellness Sanctuary master ensuite — stone bath and dual shower", type: "carousel" },
+  { src: "/assets/renders/ig-01.jpg.png", alt: "Curved coastal sanctuary with infinity pool at sunset", type: "photo" },
+  { src: "/assets/renders/ig-02.jpg.png", alt: "KDRB Precision facade — concrete and dark timber battens", type: "carousel" },
+  { src: "/assets/renders/ig-03.jpg.png", alt: "Wellness Sanctuary master ensuite — stone bath and dual shower", type: "carousel" },
   // Row 2
-  { src: "/assets/renders/ig-04.jpg", alt: "Multi-residential streetscape — contemporary townhouses at dusk", type: "photo" },
-  { src: "/assets/renders/ig-05.jpg", alt: "Sculptural spiral staircase with skylight and brass handrail", type: "reel" },
-  { src: "/assets/renders/ig-06.jpg", alt: "Kinfolk-style scullery with brass shelving and wine display", type: "carousel" },
+  { src: "/assets/renders/ig-04.jpg.png", alt: "Multi-residential streetscape — contemporary townhouses at dusk", type: "photo" },
+  { src: "/assets/renders/ig-05.jpg.png", alt: "Sculptural spiral staircase with skylight and brass handrail", type: "reel" },
+  { src: "/assets/renders/ig-06.jpg.png", alt: "Kinfolk-style scullery with brass shelving and wine display", type: "carousel" },
   // Row 3
-  { src: "/assets/renders/ig-07.jpg", alt: "Lifestyle Transition — seamless indoor-outdoor flow with plunge pool", type: "carousel" },
-  { src: "/assets/renders/ig-08.jpg", alt: "Architectural compound with horizontal lines amongst established trees", type: "photo" },
-  { src: "/assets/renders/ig-09.jpg", alt: "Wellness Sanctuary master ensuite — freestanding stone bath", type: "reel" },
+  { src: "/assets/renders/ig-07.jpg.png", alt: "Lifestyle Transition — seamless indoor-outdoor flow with plunge pool", type: "carousel" },
+  { src: "/assets/renders/ig-08.jpg.png", alt: "Architectural compound with horizontal lines amongst established trees", type: "photo" },
+  { src: "/assets/renders/ig-09.jpg.png", alt: "Wellness Sanctuary master ensuite — freestanding stone bath", type: "reel" },
 ];
 
 const highlights = [
