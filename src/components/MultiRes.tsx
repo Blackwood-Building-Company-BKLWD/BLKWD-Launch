@@ -26,7 +26,7 @@ export default function MultiRes() {
           <div className="relative aspect-[4/3] overflow-hidden bg-stone">
             <div className="absolute inset-0 shimmer" />
             <img
-              src="/assets/renders/ig-08.jpg.png"
+              src="/assets/renders/ig-04.jpg.png"
               alt="Boutique multi-residential development"
               className="absolute inset-0 h-full w-full object-cover time-slice-slow hover:scale-105"
               loading="lazy"
