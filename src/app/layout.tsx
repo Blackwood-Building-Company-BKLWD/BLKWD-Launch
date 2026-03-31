@@ -4,23 +4,23 @@ import Footer from "@/components/Footer";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "BLKWD | Luxury Design & Build",
+  title: "BLKWD | Architecture For The Subtropical Lifestyle",
   description:
-    "Bespoke Homes, Multi-Residential & Knock Down Rebuild. Serving the Gold Coast, Brisbane, and Northern NSW.",
+    "High-performance residential sanctuaries across the Gold Coast, Brisbane, and Northern NSW. Bespoke homes, knock down rebuilds, and boutique multi-residential.",
   keywords: [
-    "luxury homes",
-    "custom homes",
-    "knockdown rebuild",
+    "bespoke homes Gold Coast",
+    "knock down rebuild Brisbane",
+    "multi-residential SEQ",
+    "subtropical architecture",
     "design and construct",
-    "Sydney builder",
-    "architectural homes",
+    "coastal builder",
     "BLKWD",
     "Blackwood Building Company",
   ],
   openGraph: {
-    title: "BLKWD | Luxury Design & Build",
+    title: "BLKWD | Architecture For The Subtropical Lifestyle",
     description:
-      "Bespoke Homes, Multi-Residential & Knock Down Rebuild. Serving the Gold Coast, Brisbane, and Northern NSW.",
+      "High-performance residential sanctuaries across the Gold Coast, Brisbane, and Northern NSW.",
     siteName: "BLKWD",
     type: "website",
   },

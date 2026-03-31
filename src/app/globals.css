@@ -1,15 +1,19 @@
 @import "tailwindcss";
 
 @theme {
-  --color-black: #000000;
-  --color-white: #FFFFFF;
-  --color-charcoal: #2C3639;
-  --color-charcoal-light: #3A474A;
-  --color-stone: #1A1A1A;
-  --color-smoke: #F5F5F5;
-  --color-mist: #E0E0E0;
+  --color-black: #0A0A08;
+  --color-white: #FAF8F5;
+  --color-charcoal: #2C2C28;
+  --color-charcoal-light: #3D3B36;
+  --color-stone: #1A1914;
+  --color-oak: #8B7D6B;
+  --color-oak-light: #A89880;
+  --color-sand: #C4B8A5;
+  --color-warm-white: #F0EDE8;
+  --color-smoke: #E8E4DD;
+  --color-mist: #D4CFC6;
 
-  --font-display: "Creato Display", "Arial Black", sans-serif;
+  --font-display: "Creato Display", Georgia, "Times New Roman", serif;
   --font-body: "Montserrat", "Helvetica Neue", sans-serif;
 
   --ease-momentum: cubic-bezier(0.16, 1, 0.3, 1);
@@ -25,7 +29,7 @@ html {
 body {
   font-family: var(--font-body);
   background-color: var(--color-black);
-  color: var(--color-white);
+  color: var(--color-warm-white);
   overflow-x: hidden;
 }
 
@@ -95,7 +99,7 @@ body {
 .blkwd-rule {
   width: 60px;
   height: 2px;
-  background: var(--color-charcoal-light);
+  background: var(--color-oak);
 }
 
 /* ── Image shimmer placeholder ── */

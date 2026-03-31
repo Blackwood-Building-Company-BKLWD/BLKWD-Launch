@@ -1,52 +1,51 @@
 import Hero from "@/components/Hero";
 import AuthoritySplit from "@/components/AuthoritySplit";
+import MultiRes from "@/components/MultiRes";
 import Signature from "@/components/Signature";
 import WellnessSuite from "@/components/WellnessSuite";
+import VisualGrid from "@/components/VisualGrid";
 
 export default function Home() {
   return (
     <>
       <Hero />
 
-      {/* Breathing space between sections */}
-      <div className="h-px w-full bg-white/5" />
+      <div className="h-px w-full bg-oak/10" />
 
       <AuthoritySplit />
 
-      {/* Process */}
+      {/* The Journey to Handover */}
       <section id="process" className="bg-black py-24 sm:py-32">
         <div className="mx-auto max-w-4xl px-6 text-center">
-          <span className="font-body text-[10px] tracking-[0.4em] uppercase text-white/30">
-            How We Work
+          <span className="font-body text-[10px] tracking-[0.4em] uppercase text-oak">
+            Outcome-Based Delivery
           </span>
           <div className="blkwd-rule mx-auto mt-6 mb-8" />
-          <h2 className="font-display text-3xl sm:text-4xl font-extrabold uppercase tracking-[0.06em] text-white">
-            Architectural
+          <h2 className="font-display text-3xl sm:text-4xl font-extrabold uppercase tracking-[0.06em] text-warm-white">
+            The Journey
             <br />
-            Integrity
+            To Handover
           </h2>
-          <p className="mx-auto mt-6 max-w-lg font-body text-sm leading-relaxed text-white/40">
-            Our process is straightforward. We listen, we plan properly, and we
-            build what we said we&apos;d build. No scope creep, no surprises on
-            handover day. Just clear communication from first sketch to final
-            walkthrough.
+          <p className="mx-auto mt-6 max-w-lg font-body text-sm leading-relaxed text-sand/50">
+            Radical transparency from first conversation to key handover. No
+            hidden costs, no scope creep. You know what you&apos;re getting, what
+            it costs, and when it&apos;s done.
           </p>
 
-          {/* Process Steps */}
           <div className="mt-16 grid grid-cols-1 sm:grid-cols-3 gap-8 sm:gap-12">
             {[
-              { step: "01", label: "Design", desc: "Site analysis, council requirements, orientation for SEQ conditions. We design around your block, not a template." },
-              { step: "02", label: "Build", desc: "Fixed-price contracts, weekly progress updates, and a construction team that takes ownership of every detail." },
-              { step: "03", label: "Live", desc: "Handover isn\u2019t the end. We build homes that perform \u2014 thermally, structurally, and in the way they make you feel every morning." },
+              { step: "01", label: "Design", desc: "Site analysis, council requirements, subtropical orientation. We design around your block and the SEQ conditions \u2014 not a template." },
+              { step: "02", label: "Build", desc: "Fixed-price contract. Weekly progress updates. A construction team across the Gold Coast and Brisbane that owns every detail." },
+              { step: "03", label: "Live", desc: "Handover isn\u2019t the finish line \u2014 it\u2019s the start. We build homes that perform thermally, structurally, and in the way they make you feel." },
             ].map((item) => (
               <div key={item.step} className="text-center">
-                <span className="font-display text-5xl font-extrabold text-white/10">
+                <span className="font-display text-5xl font-extrabold text-oak/15">
                   {item.step}
                 </span>
-                <h3 className="mt-4 font-display text-sm font-bold uppercase tracking-[0.15em] text-white">
+                <h3 className="mt-4 font-display text-sm font-bold uppercase tracking-[0.15em] text-warm-white">
                   {item.label}
                 </h3>
-                <p className="mt-3 font-body text-xs leading-relaxed text-white/35">
+                <p className="mt-3 font-body text-xs leading-relaxed text-sand/40">
                   {item.desc}
                 </p>
               </div>
@@ -55,53 +54,50 @@ export default function Home() {
         </div>
       </section>
 
-      <div className="h-px w-full bg-white/5" />
+      <div className="h-px w-full bg-oak/10" />
 
       <Signature />
 
-      {/* Wellness Suite */}
+      {/* Multi-Residential */}
+      <MultiRes />
+
+      {/* Wellness — trimmed, alluded */}
       <WellnessSuite />
 
-      {/* Subtropical Living */}
-      <section className="bg-black py-24 sm:py-32 border-t border-white/5">
+      {/* Subtropical Materiality */}
+      <section className="bg-black py-24 sm:py-32 border-t border-oak/10">
         <div className="mx-auto max-w-7xl px-6 lg:px-12">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
             <div>
-              <span className="font-body text-[10px] tracking-[0.4em] uppercase text-white/30">
+              <span className="font-body text-[10px] tracking-[0.4em] uppercase text-oak">
                 Subtropical Living
               </span>
               <div className="blkwd-rule mt-6 mb-8" />
-              <h2 className="font-display text-3xl sm:text-4xl font-extrabold uppercase leading-tight tracking-[0.04em] text-white">
+              <h2 className="font-display text-3xl sm:text-4xl font-extrabold uppercase leading-tight tracking-[0.04em] text-warm-white">
                 Built For
                 <br />
                 This Coast
               </h2>
-              <p className="mt-6 max-w-md font-body text-sm leading-relaxed text-white/40">
-                South East Queensland isn&apos;t a mild climate — it&apos;s humid, salt-laden,
-                and UV-intense. Every material we specify is chosen because it
-                performs here, not because it looks good in a catalogue.
-              </p>
-              <p className="mt-4 max-w-md font-body text-sm leading-relaxed text-white/40">
-                Marine-grade steel framing. Thermally broken glazing systems.
-                Composite decking that won&apos;t cup or fade after two summers.
-                We build for the Gold Coast and Brisbane climate because
-                that&apos;s where we build — and we know what lasts.
+              <p className="mt-6 max-w-md font-body text-sm leading-relaxed text-sand/50">
+                South East Queensland isn&apos;t mild — it&apos;s humid, salt-laden, and
+                UV-intense. Every material we specify performs here. Barefoot
+                luxury from Miami to Byron Bay means your home handles the
+                conditions without you thinking about it.
               </p>
             </div>
 
-            {/* Material Specs */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-px bg-white/5">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-px bg-oak/10">
               {[
-                { label: "Marine-Grade Steel", detail: "Structural framing rated for salt-air corrosion zones across the Gold Coast and Northern NSW coastline" },
-                { label: "Composite Decking", detail: "UV-stable, low-maintenance surfaces engineered for SEQ\u2019s humidity and direct sun exposure" },
-                { label: "Passive Cooling", detail: "Cross-ventilation and subtropical orientation \u2014 reducing mechanical cooling loads by design, not afterthought" },
-                { label: "Coastal Glazing", detail: "Thermally broken aluminium with impact ratings for coastal wind zones from Tweed to Noosa" },
+                { label: "Thermal Mass", detail: "Concrete and masonry strategies that regulate internal temperatures without mechanical cooling dependency" },
+                { label: "Salt-Resistant Materiality", detail: "Marine-grade steel, coastal glazing systems, and finishes rated for salt-air corrosion zones" },
+                { label: "Spatial Flow", detail: "Cross-ventilation and subtropical orientation designed around prevailing sea breezes and solar paths" },
+                { label: "High-Performance Glazing", detail: "Thermally broken aluminium with impact ratings for coastal wind zones from Tweed to Noosa" },
               ].map((spec, i) => (
                 <div key={i} className="bg-black p-8">
-                  <h3 className="font-display text-xs font-bold uppercase tracking-[0.15em] text-white">
+                  <h3 className="font-display text-xs font-bold uppercase tracking-[0.15em] text-warm-white">
                     {spec.label}
                   </h3>
-                  <p className="mt-3 font-body text-[11px] leading-relaxed text-white/30">
+                  <p className="mt-3 font-body text-[11px] leading-relaxed text-sand/35">
                     {spec.detail}
                   </p>
                 </div>
@@ -111,28 +107,35 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Visual Grid — IG integrated */}
+      <VisualGrid />
+
       {/* About / Ethos */}
-      <section id="about" className="bg-black py-24 sm:py-32 border-t border-white/5">
+      <section id="about" className="bg-black py-24 sm:py-32 border-t border-oak/10">
         <div className="mx-auto max-w-3xl px-6 text-center">
-          <span className="font-body text-[10px] tracking-[0.4em] uppercase text-white/30">
+          <span className="font-body text-[10px] tracking-[0.4em] uppercase text-oak">
             About Blackwood
           </span>
           <div className="blkwd-rule mx-auto mt-6 mb-8" />
-          <p className="font-display text-2xl sm:text-3xl font-extrabold uppercase leading-snug tracking-[0.04em] text-white">
+          <p className="font-display text-2xl sm:text-3xl font-extrabold uppercase leading-snug tracking-[0.04em] text-warm-white">
             Design. Build. Live.
           </p>
-          <p className="mx-auto mt-8 max-w-lg font-body text-sm leading-relaxed text-white/40">
-            Blackwood was built on a simple idea: your builder should care as
-            much about how a home lives as how it looks. We&apos;re a design and
-            construct firm rooted in South East Queensland — Gold Coast, Brisbane,
-            Northern NSW — and we bring architectural integrity to every project,
-            whether it&apos;s a bespoke family home, a multi-residential development,
-            or a knock down rebuild that finally does the site justice.
+          <p className="mx-auto mt-8 max-w-lg font-body text-sm leading-relaxed text-sand/50">
+            Blackwood is a design and construct firm rooted in South East
+            Queensland. We deliver identity-driven lifestyle homes — bespoke
+            residences, knock down rebuilds, and boutique multi-residential
+            developments — across the Gold Coast, Brisbane, and Northern NSW.
           </p>
-          <p className="mx-auto mt-4 max-w-lg font-body text-sm leading-relaxed text-white/40">
-            No templates. No shortcuts. Just considered homes built by people
-            who take the craft seriously.
+          <p className="mx-auto mt-4 max-w-lg font-body text-sm leading-relaxed text-sand/50">
+            No templates. No shortcuts. Architectural integrity and bespoke
+            craft, from first conversation to handover.
           </p>
+          <a
+            href="/about"
+            className="mt-10 inline-block border border-oak/30 px-10 py-3.5 font-body text-[10px] tracking-[0.25em] uppercase text-warm-white/70 hover:bg-warm-white hover:text-black time-slice"
+          >
+            Meet The Team
+          </a>
         </div>
       </section>
     </>

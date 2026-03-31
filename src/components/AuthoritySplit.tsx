@@ -33,7 +33,6 @@ function ArchBlock({ title, subtitle, description, image, reverse }: BlockProps)
         reverse ? "lg:direction-rtl" : ""
       }`}
     >
-      {/* Image */}
       <div className={`relative aspect-[4/3] lg:aspect-auto overflow-hidden ${reverse ? "lg:order-2" : ""}`}>
         <div className="absolute inset-0 bg-stone shimmer" />
         <img
@@ -45,23 +44,22 @@ function ArchBlock({ title, subtitle, description, image, reverse }: BlockProps)
         <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
       </div>
 
-      {/* Content */}
       <div className={`flex flex-col justify-center px-8 py-16 sm:px-12 lg:px-20 lg:py-24 ${reverse ? "lg:order-1" : ""}`}>
-        <span className="font-body text-[10px] tracking-[0.3em] uppercase text-white/40 mb-4">
+        <span className="font-body text-[10px] tracking-[0.3em] uppercase text-oak mb-4">
           {subtitle}
         </span>
         <div className="blkwd-rule mb-6" />
-        <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-extrabold uppercase leading-tight tracking-[0.04em] text-white">
+        <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-extrabold uppercase leading-tight tracking-[0.04em] text-warm-white">
           {title}
         </h2>
-        <p className="mt-6 max-w-md font-body text-sm leading-relaxed text-white/50">
+        <p className="mt-6 max-w-md font-body text-sm leading-relaxed text-sand/60">
           {description}
         </p>
         <a
           href="#contact"
-          className="mt-10 inline-flex w-fit border border-white/15 px-8 py-3 font-body text-[10px] tracking-[0.25em] uppercase text-white/80 hover:bg-white hover:text-black time-slice"
+          className="mt-10 inline-flex w-fit border border-oak/30 px-8 py-3 font-body text-[10px] tracking-[0.25em] uppercase text-warm-white/80 hover:bg-warm-white hover:text-black time-slice"
         >
-          Learn More
+          Explore
         </a>
       </div>
     </div>
@@ -73,20 +71,19 @@ export default function AuthoritySplit() {
     <section id="projects" className="bg-black">
       <ArchBlock
         title="Bespoke Homes"
-        subtitle="Architectural Integrity"
-        description="We build homes that work for the way you actually live. Cross-ventilation engineered for SEQ humidity, material palettes that handle salt air without compromise, and spatial design that connects you to the subtropical landscape outside your door. Gold Coast, Brisbane, hinterland — every site has a story. We make sure the house tells it."
+        subtitle="Material Integrity"
+        description="Spatial flow designed around how you live, not how a brochure reads. Cross-ventilation for SEQ humidity, salt-resistant materiality from Miami to Byron, and thermal mass strategies that keep your home performing through every season. Each residence is a direct response to its site."
         image="/assets/renders/ig-03.jpg.png"
       />
 
-      {/* Divider */}
       <div className="flex items-center justify-center py-4">
-        <div className="h-16 w-px bg-white/10" />
+        <div className="h-16 w-px bg-oak/15" />
       </div>
 
       <ArchBlock
         title="Knock Down Rebuild"
-        subtitle="Bespoke Craft"
-        description="Your block has potential the existing structure can't unlock. Our KDRB process starts with rigorous site analysis — orientation, setbacks, soil, views — then designs around what the land actually offers. From council-ready documentation through to handover, we manage the full build so you get a home that belongs on that site."
+        subtitle="Coastal Resilience"
+        description="Your block has potential the existing structure can&apos;t reach. We start with rigorous site analysis — orientation, setbacks, soil, views — then design around what the land offers. Fixed-price contracts, outcome-based delivery, and a construction team that takes ownership of every detail through to handover."
         image="/assets/renders/ig-04.jpg.png"
         reverse
       />
