@@ -31,18 +31,19 @@ export default function Signature() {
         {/* Header */}
         <div className="mb-20 text-center">
           <span className="font-body text-[10px] tracking-[0.4em] uppercase text-white/30">
-            The Standard
+            Bespoke Craft
           </span>
           <div className="blkwd-rule mx-auto mt-6 mb-8" />
           <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-extrabold uppercase tracking-[0.06em] text-white">
             The Blackwood
             <br />
-            Signature
+            Standard
           </h2>
           <p className="mx-auto mt-6 max-w-lg font-body text-sm leading-relaxed text-white/40">
-            A curated collection of our defining work. Each project represents an
-            uncompromising commitment to architectural excellence and meticulous
-            craftsmanship.
+            Every project here started with a conversation and ended with a
+            handover we were proud of. No stock plans, no repeated facades —
+            each home is a direct response to its site, its owners, and the
+            subtropical conditions of South East Queensland.
           </p>
         </div>
 

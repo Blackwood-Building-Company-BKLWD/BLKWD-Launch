@@ -72,9 +72,9 @@ export default function AuthoritySplit() {
   return (
     <section id="projects" className="bg-black">
       <ArchBlock
-        title="Luxury Custom Homes"
-        subtitle="Bespoke Residences"
-        description="Architectural sanctuaries crafted for subtropical living. Salt-resistant materials, passive cooling, and bespoke craftsmanship converge — every residence an enduring statement of visual serenity and coastal luxury."
+        title="Bespoke Homes"
+        subtitle="Architectural Integrity"
+        description="We build homes that work for the way you actually live. Cross-ventilation engineered for SEQ humidity, material palettes that handle salt air without compromise, and spatial design that connects you to the subtropical landscape outside your door. Gold Coast, Brisbane, hinterland — every site has a story. We make sure the house tells it."
         image="/assets/renders/ig-03.jpg.png"
       />
 
@@ -84,9 +84,9 @@ export default function AuthoritySplit() {
       </div>
 
       <ArchBlock
-        title="Architectural Knockdown Rebuilds"
-        subtitle="Reimagined Living"
-        description="Reimagine your site as an architectural sanctuary. Our custom KDRB process integrates wellness suites, subtropical sustainable design, and coastal-resilient construction — transforming your block into an enduring legacy."
+        title="Knock Down Rebuild"
+        subtitle="Bespoke Craft"
+        description="Your block has potential the existing structure can't unlock. Our KDRB process starts with rigorous site analysis — orientation, setbacks, soil, views — then designs around what the land actually offers. From council-ready documentation through to handover, we manage the full build so you get a home that belongs on that site."
         image="/assets/renders/ig-04.jpg.png"
         reverse
       />

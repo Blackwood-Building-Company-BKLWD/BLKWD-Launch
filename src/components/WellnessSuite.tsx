@@ -4,24 +4,24 @@ import { useEffect, useRef } from "react";
 
 const features = [
   {
-    title: "Cold Plunge Pools",
+    title: "Cold Plunge & Recovery Pools",
     description:
-      "Precision-engineered recovery pools with integrated filtration and temperature control, designed as sculptural elements within your landscape.",
+      "Temperature-controlled plunge pools with integrated filtration, designed as functional landscape elements. Not an add-on \u2014 part of the architecture from day one.",
   },
   {
     title: "Magnesium Pools",
     description:
-      "Mineral-rich aquatic spaces that merge therapeutic wellness with architectural intent — salt-free, low-maintenance, visually seamless.",
+      "Mineral-based aquatic systems that eliminate chlorine, reduce maintenance, and integrate seamlessly into subtropical outdoor living. Built for daily use, not just weekends.",
   },
   {
     title: "Home Spa & Sauna",
     description:
-      "Bespoke steam rooms, infrared saunas, and hydrotherapy suites crafted from enduring materials — designed to perform and to inspire.",
+      "Infrared saunas, steam rooms, and hydrotherapy suites specified with materials that handle SEQ humidity. Engineered to perform, not just photograph well.",
   },
   {
-    title: "Recovery Architecture",
+    title: "Wellness-Integrated Design",
     description:
-      "Purpose-built wellness wings integrating breathwork rooms, meditation courtyards, and biophilic design for total restoration.",
+      "Breathwork rooms, meditation courtyards, biophilic detailing. We design wellness into the floor plan \u2014 not as a marketing line, but as spaces you\u2019ll actually use.",
   },
 ];
 
@@ -47,18 +47,20 @@ export default function WellnessSuite() {
         {/* Header */}
         <div className="mb-20 max-w-2xl">
           <span className="font-body text-[10px] tracking-[0.4em] uppercase text-white/30">
-            Wellness Architecture
+            Live
           </span>
           <div className="blkwd-rule mt-6 mb-8" />
           <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-extrabold uppercase leading-tight tracking-[0.04em] text-white">
-            The Wellness
+            Wellness &amp;
             <br />
-            Suite
+            Coastal Sanctuaries
           </h2>
           <p className="mt-6 max-w-lg font-body text-sm leading-relaxed text-white/40">
-            Beyond shelter. Beyond aesthetics. We design homes that actively
-            restore — integrating recovery, ritual, and visual serenity into
-            every architectural decision. The modern sanctuary demands more.
+            The &apos;Live&apos; in Design. Build. Live. means something specific to us.
+            It means your home supports recovery after a surf, hosts properly on
+            a Saturday night, and feels like a retreat without leaving the Gold
+            Coast. We integrate wellness into the architecture — not as an
+            afterthought, but as the reason you built in the first place.
           </p>
         </div>
 
@@ -89,7 +91,7 @@ export default function WellnessSuite() {
             href="#contact"
             className="border border-white/15 px-8 py-3 font-body text-[10px] tracking-[0.25em] uppercase text-white/70 hover:bg-white hover:text-black time-slice"
           >
-            Design Your Sanctuary
+            Talk To Us About Wellness
           </a>
           <div className="h-px flex-1 bg-white/5" />
         </div>

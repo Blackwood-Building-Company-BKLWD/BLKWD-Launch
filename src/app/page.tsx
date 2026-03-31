@@ -13,30 +13,31 @@ export default function Home() {
 
       <AuthoritySplit />
 
-      {/* Process Teaser */}
+      {/* Process */}
       <section id="process" className="bg-black py-24 sm:py-32">
         <div className="mx-auto max-w-4xl px-6 text-center">
           <span className="font-body text-[10px] tracking-[0.4em] uppercase text-white/30">
-            Our Process
+            How We Work
           </span>
           <div className="blkwd-rule mx-auto mt-6 mb-8" />
           <h2 className="font-display text-3xl sm:text-4xl font-extrabold uppercase tracking-[0.06em] text-white">
-            Precision At
+            Architectural
             <br />
-            Every Stage
+            Integrity
           </h2>
           <p className="mx-auto mt-6 max-w-lg font-body text-sm leading-relaxed text-white/40">
-            From initial concept through to handover, our process is built on
-            transparency, accountability, and an obsessive attention to detail
-            that defines the Blackwood standard.
+            Our process is straightforward. We listen, we plan properly, and we
+            build what we said we&apos;d build. No scope creep, no surprises on
+            handover day. Just clear communication from first sketch to final
+            walkthrough.
           </p>
 
           {/* Process Steps */}
           <div className="mt-16 grid grid-cols-1 sm:grid-cols-3 gap-8 sm:gap-12">
             {[
-              { step: "01", label: "Vision & Strategy", desc: "Site analysis, subtropical orientation, and coastal design direction — engineered for enduring luxury." },
-              { step: "02", label: "Design & Documentation", desc: "Architectural design, salt-resistant material selection, and council approvals with bespoke craftsmanship." },
-              { step: "03", label: "Build & Handover", desc: "Precision construction with full transparency — built to withstand coastal conditions for generations." },
+              { step: "01", label: "Design", desc: "Site analysis, council requirements, orientation for SEQ conditions. We design around your block, not a template." },
+              { step: "02", label: "Build", desc: "Fixed-price contracts, weekly progress updates, and a construction team that takes ownership of every detail." },
+              { step: "03", label: "Live", desc: "Handover isn\u2019t the end. We build homes that perform \u2014 thermally, structurally, and in the way they make you feel every morning." },
             ].map((item) => (
               <div key={item.step} className="text-center">
                 <span className="font-display text-5xl font-extrabold text-white/10">
@@ -61,41 +62,40 @@ export default function Home() {
       {/* Wellness Suite */}
       <WellnessSuite />
 
-      {/* Coastal Resilience */}
+      {/* Subtropical Living */}
       <section className="bg-black py-24 sm:py-32 border-t border-white/5">
         <div className="mx-auto max-w-7xl px-6 lg:px-12">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
             <div>
               <span className="font-body text-[10px] tracking-[0.4em] uppercase text-white/30">
-                Subtropical Sustainable Design
+                Subtropical Living
               </span>
               <div className="blkwd-rule mt-6 mb-8" />
               <h2 className="font-display text-3xl sm:text-4xl font-extrabold uppercase leading-tight tracking-[0.04em] text-white">
-                Enduring
+                Built For
                 <br />
-                Coastal Luxury
+                This Coast
               </h2>
               <p className="mt-6 max-w-md font-body text-sm leading-relaxed text-white/40">
-                Every Blackwood residence is engineered for the demands of coastal
-                living — salt-resistant high-grade steel framing, composite
-                decking systems, and low-maintenance material palettes that age
-                with grace, not compromise.
+                South East Queensland isn&apos;t a mild climate — it&apos;s humid, salt-laden,
+                and UV-intense. Every material we specify is chosen because it
+                performs here, not because it looks good in a catalogue.
               </p>
               <p className="mt-4 max-w-md font-body text-sm leading-relaxed text-white/40">
-                We design for visual serenity and structural permanence.
-                Subtropical orientation, passive cooling, and resilient
-                construction converge to create architectural sanctuaries that
-                perform as beautifully as they endure.
+                Marine-grade steel framing. Thermally broken glazing systems.
+                Composite decking that won&apos;t cup or fade after two summers.
+                We build for the Gold Coast and Brisbane climate because
+                that&apos;s where we build — and we know what lasts.
               </p>
             </div>
 
             {/* Material Specs */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-px bg-white/5">
               {[
-                { label: "High-Grade Steel", detail: "Marine-grade structural framing engineered for salt-air environments" },
-                { label: "Composite Decking", detail: "Low-maintenance, UV-stable surfaces that resist warping and fading" },
-                { label: "Passive Cooling", detail: "Cross-ventilation and subtropical orientation for natural climate control" },
-                { label: "Coastal Glazing", detail: "Impact-rated, thermally broken aluminium systems for panoramic resilience" },
+                { label: "Marine-Grade Steel", detail: "Structural framing rated for salt-air corrosion zones across the Gold Coast and Northern NSW coastline" },
+                { label: "Composite Decking", detail: "UV-stable, low-maintenance surfaces engineered for SEQ\u2019s humidity and direct sun exposure" },
+                { label: "Passive Cooling", detail: "Cross-ventilation and subtropical orientation \u2014 reducing mechanical cooling loads by design, not afterthought" },
+                { label: "Coastal Glazing", detail: "Thermally broken aluminium with impact ratings for coastal wind zones from Tweed to Noosa" },
               ].map((spec, i) => (
                 <div key={i} className="bg-black p-8">
                   <h3 className="font-display text-xs font-bold uppercase tracking-[0.15em] text-white">
@@ -119,16 +119,19 @@ export default function Home() {
           </span>
           <div className="blkwd-rule mx-auto mt-6 mb-8" />
           <p className="font-display text-2xl sm:text-3xl font-extrabold uppercase leading-snug tracking-[0.04em] text-white">
-            We don&apos;t build houses.
-            <br />
-            We build sanctuaries.
+            Design. Build. Live.
           </p>
           <p className="mx-auto mt-8 max-w-lg font-body text-sm leading-relaxed text-white/40">
-            Blackwood Building Company was founded on a singular belief: that the
-            homes we create should outlast trends, exceed expectations, and stand
-            as enduring statements of architectural intent. From subtropical
-            sustainable design to wellness-integrated living — every project is
-            a partnership in bespoke craftsmanship and visual serenity.
+            Blackwood was built on a simple idea: your builder should care as
+            much about how a home lives as how it looks. We&apos;re a design and
+            construct firm rooted in South East Queensland — Gold Coast, Brisbane,
+            Northern NSW — and we bring architectural integrity to every project,
+            whether it&apos;s a bespoke family home, a multi-residential development,
+            or a knock down rebuild that finally does the site justice.
+          </p>
+          <p className="mx-auto mt-4 max-w-lg font-body text-sm leading-relaxed text-white/40">
+            No templates. No shortcuts. Just considered homes built by people
+            who take the craft seriously.
           </p>
         </div>
       </section>

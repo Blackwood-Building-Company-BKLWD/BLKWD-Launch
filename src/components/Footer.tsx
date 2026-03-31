@@ -8,9 +8,12 @@ export default function Footer() {
             <span className="font-display text-lg tracking-[0.35em] font-extrabold uppercase text-white">
               BLKWD
             </span>
+            <p className="mt-2 font-body text-[10px] tracking-[0.15em] uppercase text-white/40">
+              Design. Build. Live.
+            </p>
             <p className="mt-4 max-w-xs font-body text-xs leading-relaxed text-white/30">
-              Luxury Design &amp; Build. Custom Homes, Multi-Residential &amp;
-              Knock Down Rebuild across the Gold Coast, Brisbane, and Northern NSW.
+              Bespoke homes, multi-residential, and knock down rebuilds
+              across the Gold Coast, Brisbane, and Northern NSW.
             </p>
           </div>
 

@@ -46,7 +46,7 @@ export default function Navbar() {
             href="#contact"
             className="ml-4 border border-white/20 px-6 py-2.5 font-body text-[10px] tracking-[0.2em] uppercase text-white hover:bg-white hover:text-black time-slice"
           >
-            Start Your Build
+            Let&apos;s Talk
           </Link>
         </div>
 

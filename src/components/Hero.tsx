@@ -43,14 +43,14 @@ export default function Hero() {
       <div className="hero-text relative z-10 flex h-full flex-col items-center justify-center px-6 text-center">
         <div className="blkwd-rule mx-auto mb-8" />
         <h1 className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold uppercase leading-[1.1] tracking-[0.08em] text-white max-w-5xl">
-          Luxury Design
+          Design. Build.
           <br />
-          &amp; Build.
+          Live.
         </h1>
         <p className="mt-6 max-w-xl font-body text-sm sm:text-base tracking-wide text-white/60 leading-relaxed">
-          Bespoke Homes | Multi-Residential | Knock Down Rebuild.
-          <br />
-          Serving the Gold Coast, Brisbane, and Northern NSW.
+          Bespoke homes, multi-residential, and knock down rebuilds
+          <br className="hidden sm:block" />
+          across the Gold Coast, Brisbane, and Northern NSW.
         </p>
         <a
           href="#projects"
