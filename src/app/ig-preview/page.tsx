@@ -2,9 +2,10 @@
 
 /* ─────────────────────────────────────────────
    Grid — matches Draft IG page layout exactly
-   Row 1: pool facade  |  dark facade  |  "Wellness Sanctuary" Master Ensuite
-   Row 2: facade day   |  spiral stair |  "Kinfolk-style" Scullery
-   Row 3: "Texture Story" (Fluted & Curved) | facade trees | "Wellness Sanctuary" Master Ensuite
+   Row 1: pool sanctuary  |  KDRB Precision facade  |  Wellness Sanctuary ensuite
+   Row 2: multi-res streetscape  |  spiral staircase  |  Kinfolk-style Scullery
+   Row 3: Lifestyle Transition  |  horizontal compound  |  Wellness Sanctuary ensuite
+   Captions are baked into the images — no code overlays needed.
    ───────────────────────────────────────────── */
 
 type PostType = "photo" | "carousel" | "reel";
@@ -13,23 +14,21 @@ interface Post {
   src: string;
   alt: string;
   type: PostType;
-  caption?: string;
-  captionLine2?: string;
 }
 
 const posts: Post[] = [
   // Row 1
-  { src: "/assets/renders/ig-01.jpg", alt: "Curved coastal sanctuary with infinity pool", type: "photo" },
-  { src: "/assets/renders/ig-02.jpg", alt: "Contemporary dark-clad facade with timber accents", type: "carousel" },
-  { src: "/assets/renders/ig-03.jpg", alt: "Wellness Sanctuary master ensuite with freestanding bath", type: "carousel", caption: "\u201cWellness Sanctuary\u201d Master Ensuite" },
+  { src: "/assets/renders/ig-01.jpg", alt: "Curved coastal sanctuary with infinity pool at sunset", type: "photo" },
+  { src: "/assets/renders/ig-02.jpg", alt: "KDRB Precision facade — concrete and dark timber battens", type: "carousel" },
+  { src: "/assets/renders/ig-03.jpg", alt: "Wellness Sanctuary master ensuite — stone bath and dual shower", type: "carousel" },
   // Row 2
-  { src: "/assets/renders/ig-04.jpg", alt: "Modern street-facing facade in daylight", type: "photo" },
-  { src: "/assets/renders/ig-05.jpg", alt: "Sculptural spiral staircase in concrete", type: "reel" },
-  { src: "/assets/renders/ig-06.jpg", alt: "Kinfolk-style scullery with open shelving", type: "carousel", caption: "\u201cKinfolk-style\u201d Scullery" },
+  { src: "/assets/renders/ig-04.jpg", alt: "Multi-residential streetscape — contemporary townhouses at dusk", type: "photo" },
+  { src: "/assets/renders/ig-05.jpg", alt: "Sculptural spiral staircase with skylight and brass handrail", type: "reel" },
+  { src: "/assets/renders/ig-06.jpg", alt: "Kinfolk-style scullery with brass shelving and wine display", type: "carousel" },
   // Row 3
-  { src: "/assets/renders/ig-07.jpg", alt: "Texture story — fluted concrete and curved forms", type: "carousel", caption: "\u201cTexture Story\u201d", captionLine2: "(Fluted & Curved)" },
-  { src: "/assets/renders/ig-08.jpg", alt: "Architectural facade amongst established trees", type: "photo" },
-  { src: "/assets/renders/ig-09.jpg", alt: "Wellness Sanctuary master ensuite — stone and light", type: "reel", caption: "\u201cWellness Sanctuary\u201d", captionLine2: "Master Ensuite" },
+  { src: "/assets/renders/ig-07.jpg", alt: "Lifestyle Transition — seamless indoor-outdoor flow with plunge pool", type: "carousel" },
+  { src: "/assets/renders/ig-08.jpg", alt: "Architectural compound with horizontal lines amongst established trees", type: "photo" },
+  { src: "/assets/renders/ig-09.jpg", alt: "Wellness Sanctuary master ensuite — freestanding stone bath", type: "reel" },
 ];
 
 const highlights = [
@@ -212,26 +211,6 @@ export default function IGPreview() {
               {/* Carousel / Reel badge */}
               {post.type === "carousel" && <CarouselBadge />}
               {post.type === "reel" && <ReelBadge />}
-
-              {/* Serif caption overlay — bottom-aligned */}
-              {post.caption && (
-                <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/50 via-black/20 to-transparent px-3 pb-3 pt-10">
-                  <p
-                    className="text-white text-[13px] leading-snug drop-shadow-lg"
-                    style={{ fontFamily: "Georgia, 'Times New Roman', serif", fontStyle: "italic" }}
-                  >
-                    {post.caption}
-                  </p>
-                  {post.captionLine2 && (
-                    <p
-                      className="text-white/90 text-[13px] leading-snug drop-shadow-lg"
-                      style={{ fontFamily: "Georgia, 'Times New Roman', serif", fontStyle: "italic" }}
-                    >
-                      {post.captionLine2}
-                    </p>
-                  )}
-                </div>
-              )}
             </div>
           ))}
         </div>
