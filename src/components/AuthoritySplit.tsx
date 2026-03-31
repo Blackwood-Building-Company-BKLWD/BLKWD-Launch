@@ -84,7 +84,7 @@ export default function AuthoritySplit() {
         title="Knock Down Rebuild"
         subtitle="Coastal Resilience"
         description="Your block has potential the existing structure can&apos;t reach. We start with rigorous site analysis — orientation, setbacks, soil, views — then design around what the land offers. Fixed-price contracts, outcome-based delivery, and a construction team that takes ownership of every detail through to handover."
-        image="/assets/renders/Bowsprit Hi Res.jpg.png"
+        image="/assets/renders/Bowsprit Hi Res.jpg"
         reverse
       />
     </section>
