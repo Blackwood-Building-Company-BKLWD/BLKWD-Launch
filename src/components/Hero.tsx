@@ -40,12 +40,12 @@ export default function Hero() {
       <div className="hero-text relative z-10 flex h-full flex-col items-center justify-center px-6 text-center">
         <div className="blkwd-rule mx-auto mb-8" />
         <h1 className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold uppercase leading-[1.1] tracking-[0.08em] text-warm-white max-w-5xl">
-          Architecture For The
+          Design. Build.
           <br />
-          Subtropical Lifestyle.
+          Live.
         </h1>
         <p className="mt-6 max-w-2xl font-body text-sm sm:text-base tracking-wide text-sand/80 leading-relaxed">
-          Designing and delivering high-performance residential sanctuaries
+          Bespoke homes, multi-residential, and knock down rebuilds
           <br className="hidden sm:block" />
           across the Gold Coast, Brisbane, and Northern NSW.
         </p>
