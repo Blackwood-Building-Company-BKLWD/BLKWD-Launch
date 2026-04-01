@@ -87,6 +87,17 @@ export default function AuthoritySplit() {
         image="/assets/renders/Bowsprit Hi Res.jpg"
         reverse
       />
+
+      <div className="flex items-center justify-center py-4">
+        <div className="h-16 w-px bg-oak/15" />
+      </div>
+
+      <ArchBlock
+        title="Multi-Residential"
+        subtitle="High-Performance Development"
+        description="Architecturally-led duplex, triplex, and boutique multi-res projects across the Gold Coast and Brisbane. Each dwelling designed as a standalone residence — not a repeated floor plan with different paint. The same material integrity and spatial thinking we bring to bespoke homes, engineered for yield."
+        image="/assets/renders/ig-04.jpg.png"
+      />
     </section>
   );
 }
