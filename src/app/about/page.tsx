@@ -39,7 +39,7 @@ export default function AboutPage() {
           playsInline
           poster="/assets/renders/ig-01.jpg.png"
         >
-          <source src="/assets/video/About Page.mp4" type="video/mp4" />
+          <source src="/assets/video/About%20Page.mp4" type="video/mp4" />
         </video>
         <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/30 to-black" />
         <div className="relative z-10 flex h-full flex-col items-center justify-center px-6 text-center">
