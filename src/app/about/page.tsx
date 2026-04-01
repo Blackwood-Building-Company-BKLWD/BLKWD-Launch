@@ -80,17 +80,22 @@ export default function AboutPage() {
             Our Values
           </span>
           <div className="blkwd-rule mt-6 mb-12" />
-          <div className="max-w-xl space-y-5">
+          <div className="flex flex-wrap items-center gap-x-6 gap-y-3">
             {[
-              "We are genuine.",
-              "We collaborate.",
-              "We put people first.",
-              "We are role models.",
-              "We are solution focused.",
-            ].map((value, i) => (
-              <p key={i} className="font-display text-xl sm:text-2xl font-extrabold uppercase tracking-[0.04em] text-warm-white/80">
-                {value}
-              </p>
+              "Genuine",
+              "Collaborative",
+              "People First",
+              "Role Models",
+              "Solution Focused",
+            ].map((value, i, arr) => (
+              <span key={i} className="flex items-center gap-6">
+                <span className="font-display text-lg sm:text-xl font-extrabold uppercase tracking-[0.06em] text-warm-white/80">
+                  {value}
+                </span>
+                {i < arr.length - 1 && (
+                  <span className="text-oak/40">|</span>
+                )}
+              </span>
             ))}
           </div>
         </div>
