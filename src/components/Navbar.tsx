@@ -23,7 +23,7 @@ export default function Navbar() {
   return (
     <nav
       className={`fixed top-0 left-0 w-full z-50 time-slice ${
-        scrolled ? "glass py-4" : "py-6 bg-transparent"
+        scrolled ? "glass py-4" : "py-6 bg-gradient-to-b from-black/80 to-transparent"
       }`}
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 lg:px-12">
