@@ -68,6 +68,9 @@ export default function WellnessSuite() {
             operate. How their daily routines integrate into the spaces they
             live in. We hear it in every brief — and we&apos;re building for it.
           </p>
+          <p className="mt-8 font-display text-2xl sm:text-3xl font-extrabold uppercase tracking-[0.04em] text-warm-white">
+            The Spaces They Love.
+          </p>
         </div>
 
         {/* 4-up feature grid with image slots */}
