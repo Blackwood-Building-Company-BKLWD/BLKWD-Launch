@@ -4,7 +4,7 @@ import Footer from "@/components/Footer";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "BLKWD | Architecture For The Subtropical Lifestyle",
+  title: "Blackwood Building Co | Built for the Way You Want to Live",
   description:
     "High-performance residential sanctuaries across the Gold Coast, Brisbane, and Northern NSW. Bespoke homes, knock down rebuilds, and boutique multi-residential.",
   keywords: [
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     "Blackwood Building Company",
   ],
   openGraph: {
-    title: "BLKWD | Architecture For The Subtropical Lifestyle",
+    title: "Blackwood Building Co | Built for the Way You Want to Live",
     description:
       "High-performance residential sanctuaries across the Gold Coast, Brisbane, and Northern NSW.",
     siteName: "BLKWD",

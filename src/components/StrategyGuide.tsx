@@ -429,7 +429,7 @@ export default function StrategyGuide() {
             <div className="border border-[#8B7D6B]/15 p-8">
               <span className="font-body text-[9px] tracking-[0.3em] uppercase text-[#8B7D6B]">Meta Title</span>
               <p className="mt-2 font-display text-lg font-bold text-[#FAF8F5]">
-                Blackwood Building Co | Architecture for the Subtropical Lifestyle
+                Blackwood Building Co | Built for the Way You Want to Live
               </p>
             </div>
             <div className="border border-[#8B7D6B]/15 p-8">
