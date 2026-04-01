@@ -7,21 +7,22 @@ export const metadata: Metadata = {
 };
 
 const team = [
-  {
-    name: "Director",
-    role: "Design & Strategy",
-    bio: "Leads the design direction and client relationships. Focused on translating lifestyle intent into architectural outcomes across SEQ.",
-  },
-  {
-    name: "Construction Manager",
-    role: "Build & Delivery",
-    bio: "Manages every project from slab to handover. Specialist in coastal construction, fixed-price delivery, and on-site quality control.",
-  },
-  {
-    name: "Project Coordinator",
-    role: "Client & Council",
-    bio: "The link between design intent and build reality. Handles council approvals, scheduling, and client communication throughout the journey.",
-  },
+  { name: "Scott", role: "General Manager", image: "/assets/team/scott.jpg" },
+  { name: "Elicia", role: "Business Operations Manager", image: "/assets/team/elicia.jpg" },
+  { name: "Tim", role: "Project Manager", image: "/assets/team/tim.jpg" },
+  { name: "Clint", role: "Project Manager", image: "/assets/team/clint.jpg" },
+  { name: "Dane", role: "Project Manager", image: "/assets/team/dane.jpg" },
+  { name: "Adrian", role: "Senior Estimator", image: "/assets/team/adrian.jpg" },
+  { name: "Bill", role: "Contracts Administrator", image: "/assets/team/bill.jpg" },
+  { name: "Basho", role: "Cadet CA", image: "/assets/team/basho.jpg" },
+  { name: "Brandon", role: "Building Designer", image: "/assets/team/brandon.jpg" },
+  { name: "Kamila", role: "Architectural Designer", image: "/assets/team/kamila.jpg" },
+  { name: "Ashlee", role: "Interior Designer", image: "/assets/team/ashlee.jpg" },
+  { name: "Adam", role: "Marketing Manager", image: "/assets/team/adam.jpg" },
+  { name: "John", role: "Construction Manager", image: "/assets/team/john.jpg" },
+  { name: "Ian", role: "Site Manager", image: "/assets/team/ian.jpg" },
+  { name: "Alby", role: "Site Manager", image: "/assets/team/alby.jpg" },
+  { name: "David", role: "Site Manager", image: "/assets/team/david.jpg" },
 ];
 
 export default function AboutPage() {
@@ -96,30 +97,32 @@ export default function AboutPage() {
           </div>
         </div>
 
-        {/* Team */}
-        <div>
+        {/* Meet The Team */}
+        <div className="mb-24">
           <span className="font-body text-[10px] tracking-[0.4em] uppercase text-oak">
-            The Team
+            The People Behind The Build
           </span>
-          <div className="blkwd-rule mt-6 mb-12" />
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
+          <div className="blkwd-rule mt-6 mb-8" />
+          <h2 className="font-display text-3xl sm:text-4xl font-extrabold uppercase tracking-[0.04em] text-warm-white mb-16">
+            Meet The Team
+          </h2>
+
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
             {team.map((member, i) => (
               <div key={i} className="group">
-                <div className="aspect-[3/4] bg-charcoal mb-6 overflow-hidden">
-                  <div className="h-full w-full bg-gradient-to-b from-charcoal-light to-charcoal flex items-center justify-center">
-                    <span className="font-display text-4xl font-extrabold text-oak/20">
-                      0{i + 1}
-                    </span>
-                  </div>
+                <div className="relative aspect-square overflow-hidden bg-charcoal mb-4">
+                  <img
+                    src={member.image}
+                    alt={member.name}
+                    className="absolute inset-0 h-full w-full object-cover grayscale group-hover:grayscale-0 time-slice"
+                    loading="lazy"
+                  />
                 </div>
-                <h3 className="font-display text-sm font-bold uppercase tracking-[0.1em] text-warm-white">
+                <h3 className="font-display text-sm font-bold uppercase tracking-[0.06em] text-warm-white">
                   {member.name}
                 </h3>
-                <p className="mt-1 font-body text-[10px] tracking-[0.2em] uppercase text-oak">
+                <p className="mt-0.5 font-body text-[11px] italic text-oak">
                   {member.role}
-                </p>
-                <p className="mt-3 font-body text-xs leading-relaxed text-sand/40">
-                  {member.bio}
                 </p>
               </div>
             ))}
@@ -127,7 +130,7 @@ export default function AboutPage() {
         </div>
 
         {/* CTA */}
-        <div className="mt-24 text-center border-t border-oak/10 pt-16">
+        <div className="text-center border-t border-oak/10 pt-16">
           <p className="font-display text-xl sm:text-2xl font-extrabold uppercase tracking-[0.04em] text-warm-white">
             Ready to start a conversation?
           </p>
