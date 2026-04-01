@@ -73,7 +73,7 @@ export default function AuthoritySplit() {
         title="Luxury Homes"
         subtitle="Material Integrity"
         description="Spatial flow designed around how you live, not how a brochure reads. Cross-ventilation for SEQ humidity, salt-resistant materiality from Miami to Byron, and thermal mass strategies that keep your home performing through every season. Each residence is a direct response to its site."
-        image="/assets/renders/ig-08.jpg.png"
+        image="/assets/renders/Maybree close.png"
       />
 
       <div className="flex items-center justify-center py-4">
