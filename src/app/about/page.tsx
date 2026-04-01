@@ -74,6 +74,16 @@ export default function AboutPage() {
           </p>
         </div>
 
+        {/* Signature Skyline */}
+        <div className="mb-24 flex justify-center">
+          <img
+            src="/assets/renders/blkwd-signature.png"
+            alt="Blackwood signature skyline"
+            className="w-full max-w-2xl opacity-60"
+            loading="lazy"
+          />
+        </div>
+
         {/* Values */}
         <div className="mb-24">
           <h2 className="font-display text-2xl sm:text-3xl font-extrabold uppercase tracking-[0.04em] text-warm-white mb-12">
