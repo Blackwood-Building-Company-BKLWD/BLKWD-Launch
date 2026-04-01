@@ -60,49 +60,6 @@ export default function Home() {
       {/* Wellness — trimmed, alluded */}
       <WellnessSuite />
 
-      {/* Subtropical Materiality */}
-      <section className="bg-black py-24 sm:py-32 border-t border-oak/10">
-        <div className="mx-auto max-w-7xl px-6 lg:px-12">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
-            <div>
-              <span className="font-body text-[10px] tracking-[0.4em] uppercase text-oak">
-                Subtropical Living
-              </span>
-              <div className="blkwd-rule mt-6 mb-8" />
-              <h2 className="font-display text-3xl sm:text-4xl font-extrabold uppercase leading-tight tracking-[0.04em] text-warm-white">
-                Built For
-                <br />
-                This Coast
-              </h2>
-              <p className="mt-6 max-w-md font-body text-sm leading-relaxed text-sand/50">
-                South East Queensland isn&apos;t mild — it&apos;s humid, salt-laden, and
-                UV-intense. Every material we specify performs here. Barefoot
-                luxury from Miami to Byron Bay means your home handles the
-                conditions without you thinking about it.
-              </p>
-            </div>
-
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-px bg-oak/10">
-              {[
-                { label: "Thermal Mass", detail: "Concrete and masonry strategies that regulate internal temperatures without mechanical cooling dependency" },
-                { label: "Salt-Resistant Materiality", detail: "Marine-grade steel, coastal glazing systems, and finishes rated for salt-air corrosion zones" },
-                { label: "Spatial Flow", detail: "Cross-ventilation and subtropical orientation designed around prevailing sea breezes and solar paths" },
-                { label: "High-Performance Glazing", detail: "Thermally broken aluminium with impact ratings for coastal wind zones from Tweed to Noosa" },
-              ].map((spec, i) => (
-                <div key={i} className="bg-black p-8">
-                  <h3 className="font-display text-xs font-bold uppercase tracking-[0.15em] text-warm-white">
-                    {spec.label}
-                  </h3>
-                  <p className="mt-3 font-body text-[11px] leading-relaxed text-sand/35">
-                    {spec.detail}
-                  </p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Visual Grid — IG integrated */}
       <VisualGrid />
 
