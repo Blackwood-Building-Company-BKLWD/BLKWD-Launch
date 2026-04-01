@@ -26,22 +26,27 @@ export default function Signature() {
   }, []);
 
   return (
-    <section className="bg-black py-24 sm:py-32 lg:py-40">
+    <section className="bg-black py-32 sm:py-44 lg:py-52">
       <div ref={ref} className="reveal mx-auto max-w-7xl px-6 lg:px-12">
-        <div className="mb-20 text-center">
+        <div className="mb-24 text-center">
           <span className="font-body text-[10px] tracking-[0.4em] uppercase text-oak">
-            Curated Environments
+            Brisbane to Byron
           </span>
-          <div className="blkwd-rule mx-auto mt-6 mb-8" />
-          <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-extrabold uppercase tracking-[0.06em] text-warm-white">
-            The Blackwood
+          <div className="blkwd-rule mx-auto mt-6 mb-10" />
+          <h2 className="font-display text-4xl sm:text-5xl lg:text-6xl font-extrabold uppercase tracking-[0.06em] text-warm-white">
+            Our Promise
             <br />
-            Standard
+            To You
           </h2>
-          <p className="mx-auto mt-6 max-w-lg font-body text-sm leading-relaxed text-sand/50">
-            No stock plans, no repeated facades. Each project is a direct
-            response to its site, its owners, and the subtropical conditions
-            between Miami and Byron Bay.
+          <p className="mx-auto mt-8 max-w-2xl font-body text-base sm:text-lg leading-relaxed text-sand/50">
+            From Brisbane to Byron Bay, every home we build is a direct
+            reflection of the way its owners live. Not how we think they should
+            live — how they actually do. Your mornings, your weekends, the way
+            you move through a space. We listen to that, and we build around it.
+          </p>
+          <p className="mx-auto mt-4 max-w-2xl font-body text-base sm:text-lg leading-relaxed text-sand/50">
+            No stock plans. No repeated facades. Just considered homes that
+            belong on their site and feel right from the first morning.
           </p>
         </div>
 
