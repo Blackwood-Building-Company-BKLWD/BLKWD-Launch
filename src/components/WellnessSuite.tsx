@@ -2,6 +2,33 @@
 
 import { useEffect, useRef } from "react";
 
+const features = [
+  {
+    title: "Hot & Cold Plunge",
+    description:
+      "Integrated plunge pools — cold recovery after a surf, heated spa under the stars. Designed into your landscape, not bolted on after.",
+    image: "/assets/renders/wellness-plunge.jpg.png",
+  },
+  {
+    title: "Outdoor Barrel Sauna",
+    description:
+      "Timber barrel saunas nestled into subtropical gardens. A 15-step walk from your back door to genuine recovery.",
+    image: "/assets/renders/wellness-sauna.jpg.png",
+  },
+  {
+    title: "Home Gym & Recovery",
+    description:
+      "Purpose-built gym spaces with indoor sauna, spa, and cool-down zones. Train, recover, and never leave the house.",
+    image: "/assets/renders/wellness-gym.jpg.png",
+  },
+  {
+    title: "Steam Shower",
+    description:
+      "Steam rooms engineered directly into your shower. Recovery becomes part of your morning — not a separate trip.",
+    image: "/assets/renders/wellness-steam.jpg.png",
+  },
+];
+
 export default function WellnessSuite() {
   const ref = useRef<HTMLDivElement>(null);
 
@@ -20,10 +47,11 @@ export default function WellnessSuite() {
 
   return (
     <section className="bg-black py-32 sm:py-44 border-t border-oak/10">
-      <div ref={ref} className="reveal mx-auto max-w-5xl px-6 lg:px-12">
-        <div className="text-center mb-20">
+      <div ref={ref} className="reveal mx-auto max-w-7xl px-6 lg:px-12">
+        {/* Header */}
+        <div className="text-center mb-10">
           <span className="font-body text-[10px] tracking-[0.4em] uppercase text-oak">
-            How You Live
+            What Our Clients Want
           </span>
           <div className="blkwd-rule mx-auto mt-6 mb-10" />
           <h2 className="font-display text-4xl sm:text-5xl font-extrabold uppercase tracking-[0.06em] text-warm-white">
@@ -33,26 +61,42 @@ export default function WellnessSuite() {
           </h2>
         </div>
 
-        <div className="max-w-2xl mx-auto">
+        {/* Intro copy */}
+        <div className="max-w-2xl mx-auto text-center mb-20">
           <p className="font-body text-base sm:text-lg leading-relaxed text-sand/60">
             More and more, our clients care about how they feel. How they
             operate. How their daily routines integrate into the spaces they
-            live in. We hear it in every brief. We see it in the way people
-            are building now.
+            live in. We hear it in every brief — and we&apos;re building for it.
           </p>
-          <p className="mt-6 font-body text-base sm:text-lg leading-relaxed text-sand/60">
-            Cold plunge pools after a morning surf. Hot spas under the stars
-            on a Tuesday night. Indoor and outdoor saunas that actually get
-            used — not just photographed. Steam rooms built into your shower
-            so recovery is part of your morning, not a separate trip.
-          </p>
-          <p className="mt-6 font-body text-base sm:text-lg leading-relaxed text-sand/60">
-            We don&apos;t sell wellness as a marketing line. We design these
-            spaces because our clients ask for them — and because we know
-            how to build them properly for the Gold Coast climate. The right
-            filtration, the right materials, the right placement so it all
-            works without thinking about it.
-          </p>
+        </div>
+
+        {/* 4-up feature grid with image slots */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          {features.map((feature, i) => (
+            <div key={i} className="group relative overflow-hidden bg-stone">
+              {/* Image */}
+              <div className="aspect-[3/2] relative">
+                <div className="absolute inset-0 shimmer" />
+                <img
+                  src={feature.image}
+                  alt={feature.title}
+                  className="absolute inset-0 h-full w-full object-cover time-slice-slow group-hover:scale-105"
+                  loading="lazy"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
+              </div>
+
+              {/* Content overlay */}
+              <div className="absolute bottom-0 left-0 right-0 p-6 sm:p-8">
+                <h3 className="font-display text-lg sm:text-xl font-bold uppercase tracking-[0.06em] text-warm-white">
+                  {feature.title}
+                </h3>
+                <p className="mt-2 max-w-sm font-body text-xs sm:text-sm leading-relaxed text-sand/70">
+                  {feature.description}
+                </p>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </section>
