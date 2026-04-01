@@ -67,6 +67,50 @@ Fixed-price. Outcome-based. Built to last.`,
     hashtags: "#BLKWD #KnockDownRebuild #KDRB #GoldCoastBuilder #BrisbanBuilder #DesignBuildLive #BespokeHomes",
     type: "carousel" as const,
   },
+  {
+    title: "The Cold Plunge",
+    image: "/assets/renders/wellness-plunge.jpg.png",
+    caption: `Cold plunge after a morning surf. Hot spa under the stars on a Tuesday night.
+
+More and more, our clients are asking for integrated recovery spaces — not as an add-on, but as part of the architecture from day one.
+
+We design plunge pools into your landscape. Temperature-controlled. Properly filtered. Built to be used daily, not just admired.`,
+    hashtags: "#BLKWD #ColdPlunge #WellnessArchitecture #GoldCoastLiving #DesignBuildLive #RecoveryAtHome #SubtropicalLiving",
+    type: "carousel" as const,
+  },
+  {
+    title: "The Barrel Sauna",
+    image: "/assets/renders/wellness-sauna.jpg.png",
+    caption: `Fifteen steps from your back door to genuine recovery.
+
+Outdoor barrel saunas nestled into subtropical gardens. Timber, heat, fresh air. No membership. No drive. Just walk outside.
+
+This is what our clients are building into their homes now — and we know how to engineer it for the Gold Coast climate.`,
+    hashtags: "#BLKWD #BarrelSauna #OutdoorSauna #WellnessAtHome #GoldCoastBuilder #DesignBuildLive #SubtropicalGarden",
+    type: "reel" as const,
+  },
+  {
+    title: "The Home Gym",
+    image: "/assets/renders/wellness-gym.jpg.png",
+    caption: `Train. Recover. Never leave the house.
+
+Purpose-built gym spaces with indoor sauna, spa, and cool-down zones. Not a converted garage — a considered space designed for how you actually train.
+
+Polished concrete. Cedar-lined sauna. Natural light from clerestory windows. Performance meets architecture.`,
+    hashtags: "#BLKWD #HomeGym #RecoverySauna #DesignBuildLive #GoldCoastHomes #HighPerformanceLiving #WellnessArchitecture",
+    type: "carousel" as const,
+  },
+  {
+    title: "The Steam Shower",
+    image: "/assets/renders/wellness-steam.jpg.png",
+    caption: `Recovery shouldn't require a separate trip.
+
+Steam rooms engineered directly into your ensuite shower. Warm stone bench. Dual rain heads. Materials rated for SEQ humidity.
+
+Your morning routine, upgraded. Every single day.`,
+    hashtags: "#BLKWD #SteamShower #MasterEnsuite #WellnessDesign #GoldCoastBuilder #DesignBuildLive #BathroomDesign",
+    type: "reel" as const,
+  },
 ];
 
 const metaAds = [
