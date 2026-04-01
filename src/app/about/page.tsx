@@ -74,17 +74,38 @@ export default function AboutPage() {
           </p>
         </div>
 
+        {/* Our Values */}
+        <div className="mb-16">
+          <span className="font-body text-[10px] tracking-[0.4em] uppercase text-oak">
+            Our Values
+          </span>
+          <div className="blkwd-rule mt-6 mb-12" />
+          <div className="max-w-xl space-y-5">
+            {[
+              "We are genuine.",
+              "We collaborate.",
+              "We put people first.",
+              "We are role models.",
+              "We are solution focused.",
+            ].map((value, i) => (
+              <p key={i} className="font-display text-xl sm:text-2xl font-extrabold uppercase tracking-[0.04em] text-warm-white/80">
+                {value}
+              </p>
+            ))}
+          </div>
+        </div>
+
         {/* Signature Skyline */}
         <div className="mb-24 flex justify-center">
           <img
             src="/assets/renders/blkwd-signature.png"
             alt="Blackwood signature skyline"
-            className="w-full max-w-2xl opacity-60"
+            className="w-full max-w-2xl opacity-50"
             loading="lazy"
           />
         </div>
 
-        {/* Values */}
+        {/* What We Stand On — detail cards */}
         <div className="mb-24">
           <h2 className="font-display text-2xl sm:text-3xl font-extrabold uppercase tracking-[0.04em] text-warm-white mb-12">
             What We Stand On
