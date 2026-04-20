@@ -52,7 +52,7 @@ function ArchBlock({ title, subtitle, description, image, reverse }: BlockProps)
         <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-extrabold uppercase leading-tight tracking-[0.04em] text-warm-white">
           {title}
         </h2>
-        <p className="mt-6 max-w-md font-body text-sm leading-relaxed text-sand/60">
+        <p className="mt-6 max-w-md font-body text-base leading-relaxed text-sand/65">
           {description}
         </p>
         <a
@@ -69,10 +69,28 @@ function ArchBlock({ title, subtitle, description, image, reverse }: BlockProps)
 export default function AuthoritySplit() {
   return (
     <section id="projects" className="bg-black">
+      {/* Intro header for section */}
+      <div className="mx-auto max-w-4xl px-6 lg:px-12 pt-32 sm:pt-40 pb-16 text-center">
+        <span className="font-body text-[10px] tracking-[0.4em] uppercase text-oak">
+          The Work
+        </span>
+        <div className="blkwd-rule mx-auto mt-6 mb-10" />
+        <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-extrabold uppercase leading-[1.1] tracking-[0.04em] text-warm-white">
+          Homes Built
+          <br />
+          Around The Life Inside Them.
+        </h2>
+        <p className="mt-8 max-w-2xl mx-auto font-body text-base sm:text-lg leading-relaxed text-sand/55">
+          Your life has changed. Your home should catch up. Whether you&apos;re
+          building fresh, reimagining a block you already own, or shaping a
+          boutique development — we design around how you actually live.
+        </p>
+      </div>
+
       <ArchBlock
-        title="Luxury Homes"
-        subtitle="Material Integrity"
-        description="Spatial flow designed around how you live, not how a brochure reads. Cross-ventilation for SEQ humidity, salt-resistant materiality from Miami to Byron, and thermal mass strategies that keep your home performing through every season. Each residence is a direct response to its site."
+        title="The Sanctuary"
+        subtitle="Custom Homes"
+        description="For those ready to build the reward for years of hard work. Indoor-outdoor living, material integrity, and spatial flow designed around your rituals — morning coffee, the way you host on a Saturday, how you wind down on a Tuesday. Wow factor with liveability."
         image="/assets/renders/Maybree close.png"
       />
 
@@ -81,9 +99,9 @@ export default function AuthoritySplit() {
       </div>
 
       <ArchBlock
-        title="Knock Down Rebuild"
-        subtitle="Coastal Resilience"
-        description="Your block has potential the existing structure can&apos;t reach. We start with rigorous site analysis — orientation, setbacks, soil, views — then design around what the land offers. Fixed-price contracts, outcome-based delivery, and a construction team that takes ownership of every detail through to handover."
+        title="The Reimagination"
+        subtitle="Knock Down Rebuild"
+        description="You already have the block. You just need the home that belongs on it. Rigorous site analysis, fixed-price clarity, and a construction team that owns every detail through to handover. The site you love, finally doing the life you're building justice."
         image="/assets/renders/Bowsprit Hi Res.jpg"
         reverse
       />
@@ -93,9 +111,9 @@ export default function AuthoritySplit() {
       </div>
 
       <ArchBlock
-        title="Multi-Residential"
-        subtitle="High-Performance Development"
-        description="Architecturally-led duplex, triplex, and boutique multi-res projects across the Gold Coast and Brisbane. Each dwelling designed as a standalone residence — not a repeated floor plan with different paint. The same material integrity and spatial thinking we bring to bespoke homes, engineered for yield."
+        title="The Collection"
+        subtitle="Boutique Multi-Residential"
+        description="Architecturally-led duplex, triplex, and small-scale multi-res projects for selective developers. Same material integrity, same spatial thinking we bring to bespoke homes — engineered for yield without repetition. Each dwelling designed as a standalone residence."
         image="/assets/renders/ig-04.jpg.png"
       />
     </section>

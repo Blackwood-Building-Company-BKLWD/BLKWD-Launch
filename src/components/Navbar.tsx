@@ -51,7 +51,7 @@ export default function Navbar() {
             href="#contact"
             className="ml-4 border border-oak/30 px-6 py-2.5 font-body text-[10px] tracking-[0.2em] uppercase text-warm-white hover:bg-warm-white hover:text-black time-slice"
           >
-            Let&apos;s Talk
+            Start A Conversation
           </Link>
         </div>
 
